@@ -12,6 +12,10 @@ dependencies = [
     "portalocker>=3.1.1",
     "rise>=5.7.1",
     "scipy>=1.15.2",
+    "jupyter",
+    "jupyterlab-rise>=0.43.1",
+    "marimo>=0.12.10",
+    "jupyterlab-slideshow>=0.3.2",
 ]
 
 [build-system]

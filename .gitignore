@@ -7,6 +7,7 @@ wheels/
 *.egg-info
 *.pyd
 *.cpp
-
+*.pkl
+.ipynb_checkpoints
 # Virtual environments
 .venv
