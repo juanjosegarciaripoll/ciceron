@@ -1,0 +1,26 @@
+[project]
+name = "ciceron"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "h5py>=3.13.0",
+    "matplotlib>=3.10.1",
+    "networkx>=3.4.2",
+    "numpy>=2.2.4",
+    "portalocker>=3.1.1",
+    "rise>=5.7.1",
+    "scipy>=1.15.2",
+]
+
+[build-system]
+requires = ["setuptools", "cython>=3.0.0", "numpy", "scipy"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"] # list of folders that contain the packages (["."] by default)
+include = [
+  "qaoa*",
+] # package names should match these glob patterns (["*"] by default)
+namespaces = true # to disable scanning PEP 420 namespaces (true by default)
